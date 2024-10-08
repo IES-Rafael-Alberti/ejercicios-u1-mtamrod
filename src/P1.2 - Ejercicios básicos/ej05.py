@@ -1,5 +1,5 @@
-impNoIva = float(input("Introduce el importe del articulo sin IVA: "))
-impIva = float(0)
+imp_no_iva = float(input("Introduce el importe del articulo sin IVA: "))
+imp_iva = float(0)
 iva = float(0)
 
 print("1. 21%")
@@ -11,12 +11,12 @@ while (tipoIva != 1 and tipoIva !=2 and tipoIva !=3):
     tipoIva = int(input("Introduce el tipo de IVA: "))
 
 if (tipoIva == 1):
-    iva = 0.21 * impNoIva 
+    iva = 0.21 * imp_no_iva 
 elif (tipoIva == 2):
-    iva = 0.1 * impNoIva 
+    iva = 0.1 * imp_no_iva 
 else:
-    iva = 0.04 * impNoIva 
+    iva = 0.04 * imp_no_iva 
 
-impIva = impNoIva + iva
+imp_iva = imp_no_iva + iva
 
-print(f"El precio final es {impIva}€")
+print(f"El precio final es {imp_iva}€")

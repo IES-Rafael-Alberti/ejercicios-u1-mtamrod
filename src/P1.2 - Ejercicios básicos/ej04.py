@@ -1,5 +1,5 @@
-Celsius = int(input("Introduce una temperatura en grados Celsius: "))
+celsius = int(input("Introduce una temperatura en grados Celsius: "))
 
-Fahrenheit = Celsius * (9/5) + 32
+fahrenheit = celsius * (9/5) + 32
 
-print(str(Celsius) + "ºC equivalen a " + str(Fahrenheit) + " grados fahrenheit")
+print(str(celsius) + "ºC equivalen a " + str(fahrenheit) + " grados fahrenheit")
