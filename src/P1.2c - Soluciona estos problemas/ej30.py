@@ -6,19 +6,28 @@ Por ejemplo, si introducen los valores 1, 1 y 10, el programa mostrará en conso
 numero_inicio = int(input("Introduce un número: "))
 incremento = int(input("Introduce un incremento: "))
 total_serie = int(input("Introduce un total de la serie: "))
-serie = ""
+serie = []
 
 while incremento <= 0 or total_serie <= 0:
     print("**ERROR**")
     incremento = int(input("Introduce un incremento: "))
     total_serie = int(input("Introduce un total de la serie: "))
 
-for i in range(numero_inicio, total_serie + 1):
-    if i == numero_inicio or i == total_serie -1:
-        serie += str(i) + "-"
-    elif i == total_serie:
-        serie += str(i)
+for i in range(numero_inicio, total_serie + 1, incremento):
+    if numero_inicio == i:
+        serie.append(str(i))
+        serie.append("-")
+    elif total_serie == i:
+        serie.append("-")
+        serie.append(str(i))
+        del serie[-3]
     else:
-        serie += str(i) + ".."
-
+        serie.append(str(i))
+        serie.append("..")
+if i!= total_serie:
+    del serie[-3:]
+    serie.append("-")
+    serie.append(str(i))
+    
+serie = "".join(serie)
 print(f"SERIE => {serie}")
