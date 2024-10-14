@@ -3,4 +3,4 @@ iva = 0.1
 
 importe = importe + importe * iva
 
-print(f"El precio final es {importe}€")
+print(f"El precio final es {importe:.2f}€")
