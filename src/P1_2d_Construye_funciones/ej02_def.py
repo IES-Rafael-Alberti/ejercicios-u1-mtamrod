@@ -6,9 +6,9 @@ def inputs():
 
 def operador():
     horas, precio = inputs()
-    total = horas * precio
+    
 
-    return total
+    return horas * precio
 
 def main():
     print(f"Importe total: {operador()}€")
