@@ -40,6 +40,11 @@ if __name__ == "__main__":
 
 
 """
+def user_menu():
+    print("1. 21%")
+    print("2. 10%")
+    print("3. 4%")
+
 def operador(imp_no_iva, imp_iva, iva, tipoIva):
     if (tipoIva == 1):
         iva = 0.21 * imp_no_iva 
@@ -56,10 +61,8 @@ def main():
     imp_no_iva = float(input("Introduce el importe del articulo sin IVA: "))
     imp_iva = float(0)
     iva = float(0)
-
-    print("1. 21%")
-    print("2. 10%")
-    print("3. 4%")
+    
+    user_menu()
     tipoIva = int(input("Introduce el tipo de IVA: "))
     
     operador(imp_no_iva, imp_iva, iva, tipoIva)
