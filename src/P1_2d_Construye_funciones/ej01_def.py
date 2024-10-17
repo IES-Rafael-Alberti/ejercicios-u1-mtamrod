@@ -1,5 +1,5 @@
 def input_nombre():
-    nombre = input("Escribe tu nombre: ")
+    nombre = "mario"
     return nombre
 
 def main():

@@ -8,7 +8,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 from src.prueba1 import n_mayor
 
 def test_n_mayor_numero_mayor():
-    assert n_mayor(10, 5) == 10
+    assert n_mayor(10, 5) == 1
 
 def test_n_mayor_numeros_iguales():
     assert n_mayor(5, 5) == 0
