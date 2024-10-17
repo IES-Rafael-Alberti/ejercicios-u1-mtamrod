@@ -1,18 +1,12 @@
-def inputs():
-    fahrenheit = float(input("Introduce una temperatura en grados Fahrenheit: "))
-
-    return fahrenheit
-
 def fahr_to_celsius():
-    fahrenheit = inputs()
+    fahrenheit = float(input("Introduce una temperatura en grados Fahrenheit: "))
     celsius = (fahrenheit - 32) * (5 / 9)
 
-    return celsius, fahrenheit
+    return f"Son {celsius}ºC ({fahrenheit})"
 
 
 def main():
-    celsius, fahrenheit = fahr_to_celsius()
-    print(f"{celsius:.2f}ºC ({fahrenheit:.2f}ºF)")
+    print(fahr_to_celsius())
 
 
 if __name__ == "__main__":

@@ -11,7 +11,6 @@ def main():
     n2 = 6
     print(n_mayor(n1, n2))
 
-#test
 
 if __name__ == "__main__":
     main()
